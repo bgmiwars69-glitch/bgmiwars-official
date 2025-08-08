@@ -1,0 +1,385 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGMI WARS OFFICIAL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caladea&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Caladea', serif;
+    }
+    body {
+      background-color: black;
+      color: white;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .home-bg {
+      background: url('bgmi-home.jpg') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 5%;
+      color: white;
+      position: relative;
+    }
+    .home-bg::before,
+    .about-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    .home-text,
+    .about-content {
+      position: relative;
+      z-index: 1;
+    }
+    .home-text h1 {
+      font-size: 36px;
+      text-decoration: underline;
+    }
+    .home-text h2 {
+      font-size: 24px;
+      margin-top: 10px;
+      color: yellow;
+    }
+    .home-text p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .section-title {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+      text-decoration: underline;
+    }
+    .services-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .service {
+      text-align: center;
+      width: 200px;
+      margin: 20px;
+    }
+    .service img {
+      width: 100px;
+      height: 100px;
+    }
+    .form-box {
+      max-width: 400px;
+      margin: 0 auto;
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .form-box input, .form-box button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .about-bg {
+      background: url('bgmi-about.jpg') no-repeat center center/cover;
+      position: relative;
+      padding: 60px 20px;
+    }
+    .about-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .about-content img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+    }
+    .about-text {
+      flex: 1;
+      font-size: 1.2rem;
+      color: #fefcfc;
+    }
+  </style><style>
+  @media (max-width: 768px) {
+    header {
+      font-size: 22px;
+      padding: 15px;
+    }
+
+    nav a {
+      display: block;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .section-title {
+      font-size: 22px;
+    }
+
+    #scroll-container img {
+      height: 160px;
+    }
+
+    button {
+      padding: 6px 12px;
+      font-size: 18px;
+      margin: 5px;
+    }
+
+    section {
+      padding: 30px 10px;
+    }
+
+    .about-content {
+      flex-direction: column;
+    }
+
+    .about-content img {
+      max-width: 100%;
+    }
+
+    .home-text h1 {
+      font-size: 28px;
+    }
+
+    .home-text h2 {
+      font-size: 20px;
+    }
+
+    .home-text p {
+      font-size: 16px;
+    }
+
+    .services-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .service {
+      width: 80%;
+    }
+  }
+</style>
+  </style>
+</head>
+<body>
+  <header>THE BGMI WARS OFFICIAL</header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#disclaimer">Disclaimer</a>
+    <a href="#register">Register</a>
+    <a href="#payment">UPI Info</a>
+  </nav>  <section class="home-bg" id="home">
+    <div class="home-text">
+      <h1>BGMI WARS</h1>
+      <h2>Powered by BGMI WARRIORS</h2>
+      <p>Join our daily intense battles and win exciting rewards!</p>
+    </div>
+  </section>  <section class="about-bg" id="about">
+    <div class="about-content">
+      <img src="bgmi-about.jpg" alt="BGMI Tournament" />
+      <div class="about-text">
+        <h2 class="section-title">About Us</h2>
+        <p>
+          BGMI WARS is a platform for players to battle it out in daily tournaments and win exciting prizes.
+          Join our competitive arena and rise to the top! Welcome to BGMI WARS, the ultimate battlegrounds for competitive BGMI players across India. We're a dedicated team of gamers on a mission to create the most exciting, fair, and rewarding tournament experience. Whether you're a casual player or a hardcore grinder, BGMI WARS gives you daily chances to prove your skills, win real rewards, and rise up the ranks. With custom rooms, verified results, a growing community, and instant updates - we don't just host matches, we build legends. Join the warzone. Play smart. Win big. Rule the battleground.
+        </p>
+      </div>
+    </div>
+  </section> <section id="services" style="background-color: #000; padding: 50px 20px;">
+  <h2 class="section-title" style="color: orange;">SERVICES</h2>
+  <div class="services-container" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+    <div class="service" style="text-align: center; width: 250px; margin: 20px;">
+      <img src="bgmi.1.jpg" alt="Cash Prize Matches" style="width: 100px; height: 100px; border-radius: 8px;">
+      <h3 style="color: yellow; margin-top: 10px;">Cash Prize Matches</h3>
+      <p style="color: white;">Win real cash daily by entering our paid rooms with MVP bonuses!</p>
+    </div>
+    <div class="service" style="text-align: center; width: 250px; margin: 20px;">
+      <img src="bgmi.2.jpg" alt="Easy Registration" style="width: 100px; height: 100px; border-radius: 8px;">
+      <h3 style="color: yellow; margin-top: 10px;">Easy Registration</h3>
+      <p style="color: white;">Register quickly using our bot and pay securely via UPI.</p>
+    </div>
+    <div class="service" style="text-align: center; width: 250px; margin: 20px;">
+      <img src="bgmi.3.jpg" alt="Fair & Transparent" style="width: 100px; height: 100px; border-radius: 8px;">
+      <h3 style="color: yellow; margin-top: 10px;">Fair & Transparent</h3>
+      <p style="color: white;">Live stream validation, no cheating, and fair judgment, Players Support Available.</p>
+    </div>
+  </div>
+</section><section id="gallery" style="background-color: #000; padding: 50px 20px; position: relative;">
+  <h2 class="section-title" style="color: orange; text-align: center; margin-bottom: 30px;">
+    🎞️ GALLERY
+  </h2>
+
+  <!-- Scroll Buttons -->
+  <button onclick="scrollGallery(-1)" style="position: absolute; top: 55%; left: 10px; transform: translateY(-50%); z-index: 2; background-color: #111; color: white; border: none; font-size: 30px; cursor: pointer; padding: 10px; border-radius: 50%;">
+    ‹
+  </button>
+  <button onclick="scrollGallery(1)" style="position: absolute; top: 55%; right: 10px; transform: translateY(-50%); z-index: 2; background-color: #111; color: white; border: none; font-size: 30px; cursor: pointer; padding: 10px; border-radius: 50%;">
+    ›
+  </button>
+
+  <!-- Image Scroll Container -->
+  <div id="scroll-container" style="
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px 0;
+  ">
+    <img src="image.1.jpeg" style="height: 300px; border-radius: 10px;">
+    <img src="image.2.jpeg" style="height: 300px; border-radius: 10px;">
+    <img src="image.3.jpeg" style="height: 300px; border-radius: 10px;">
+    <img src="image.4.jpeg" style="height: 300px; border-radius: 10px;">
+    <img src="image.5.jpeg" style="height: 300px; border-radius: 10px;">
+    <img src="image.6.jpeg" style="height: 300px; border-radius: 10px;">
+    <img src="image.7.jpeg" style="height: 300px; border-radius: 10px;">
+    <img src="image.8.jpeg" style="height: 300px; border-radius: 10px;">
+    <img src="image.9.jpeg" style="height: 300px; border-radius: 10px;">
+    <img src="image.10.jpeg" style="height: 300px; border-radius: 10px;">
+    <img src="image.11.jpeg" style="height: 300px; border-radius: 10px;">
+    <img src="image.12.jpeg" style="height: 300px; border-radius: 10px;">
+  </div>
+</section>
+
+<!-- Scroll Script -->
+<script>
+  function scrollGallery(direction) {
+    const container = document.getElementById("scroll-container");
+    const scrollAmount = 320; // Scroll by one image + margin
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+  </div>
+</section><section id="disclaimer" style="background-color: #111; padding: 50px 20px;">
+  <h2 class="section-title" style="color: orange; text-align: center; margin-bottom: 30px;">DISCLAIMER</h2>
+
+  <div style="max-width: 900px; margin: auto; font-size: 1.1rem; color: #eee; line-height: 1.8; text-align: center;">
+    <p><strong style="color: yellow;">BGMI WARS - Security, Trust & Fairness</strong></p><br>
+
+    <p>At BGMI WARS, we are committed to providing a <strong style="color: #0ff;">Fair</strong> and <strong style="color: #0ff;">Transparent</strong> gaming experience for every player.<br>Your trust and safety are our top priorities.</p><br>
+
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li>✅ Transparent matchmaking with rank-based room creation.</li>
+      <li>❌ No tolerance for cheating – hacks, emulators, or unfair tools are strictly banned.</li>
+      <li>👮‍♂️ Fair admin validation – every match is reviewed manually with submitted screenshots.</li>
+      <li>📺 Matches may be live-streamed for transparency and trust.</li>
+    </ul><br>
+
+    <p><strong style="color: red;">NOTE:</strong> "There will a entry fee for every player. Join us to play in battlegrounds".</p><br>
+
+    <p style="font-weight: bold; color: #0f0;">THANK YOU for supporting BGMI WARS and We will keep the battlegrounds clean!</p>
+  </div>
+</section><section id="register" style="background-color: #000; padding: 50px 20px;">
+  <h2 class="section-title" style="color: orange; text-align: center; margin-bottom: 30px;">
+    📝 REGISTER
+  </h2>
+
+  <div style="
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  ">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSe_3_trQ6syHrlyuVE5dKRMfBgMiJqp5ZdF18zj5WxOoVq3pA/viewform?embedded=true" 
+      width="100%" 
+      height="700" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0"
+      style="border: none; max-width: 700px; width: 100%;">
+      Loading…
+    </iframe>
+  </div>
+</section>
+</section id="payment" style="background-color: #111; padding: 50px 20px;">
+  <h2 class="section-title">💸 SCAN TO PAY</h2>
+  <div style="max-width: 600px; margin: auto; text-align: center;">
+    <p style="font-size: 1.2rem; margin-bottom: 20px;">
+      Please scan the QR code below and send the screenshot on WhatsApp.<br><br>
+      <strong>Entry Fee: ₹49</strong><br>
+      Join the next BGMI custom match now!
+    </p>
+
+    <img src="upi qr.jpeg" alt="UPI QR Code" style="max-width: 250px; width: 100%; border-radius: 12px; box-shadow: 0 0 10px rgba(255,255,255,0.2); margin: 20px 0;">
+
+    <p style="font-size: 1.1rem;">
+      ✅ UPI ID: <strong>9059293262-2@ybl</strong><br>
+      📲 WhatsApp: <strong>+91-9059293262</strong><br><br>
+      Send screenshot + your name to confirm entry.
+    </p>
+
+    <p style="color: red; font-weight: bold; margin-top: 30px;">
+      Note: Payment once made is non-refundable.
+    </p>
+  </div>
+</section> <footer style="background-color: #111; color: #eee; padding: 40px 20px; text-align: center; font-family: Caladea, serif;">
+  <h3 style="color: orange; margin-bottom: 20px;">🎮 BGMI WARS</h3>
+
+  <p style="margin: 10px 0;">
+    <a href="#about" style="color: #0ff; text-decoration: none; margin: 0 10px;">About</a>
+    <a href="#services" style="color: #0ff; text-decoration: none; margin: 0 10px;">Services</a>
+    <a href="#gallery" style="color: #0ff; text-decoration: none; margin: 0 10px;">Gallery</a>
+    <a href="#disclaimer" style="color: #0ff; text-decoration: none; margin: 0 10px;">Disclaimer</a>
+    <a href="#register" style="color: #0ff; text-decoration: none; margin: 0 10px;">Register</a>
+  </p>
+
+  <p style="margin: 15px 0; font-size: 14px;">
+    📧 Contact us at: <a href="mailto:bgmiwars@email.com" style="color: #0ff;">bgmiwars@email.com</a>
+  </p>
+
+  <p style="margin-top: 20px; font-size: 13px; color: #888;">
+    © 2025 BGMI WARS. All Rights Reserved.
+  </p>
+</footer>
+</body>
+</html>
